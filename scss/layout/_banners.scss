@@ -1,0 +1,23 @@
+.banners {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.banners__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.banners__item {
+  border-radius: 25px;
+  border: 10px solid transparent;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border: 10px solid #d3219e;
+  }
+}

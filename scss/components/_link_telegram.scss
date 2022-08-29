@@ -1,0 +1,26 @@
+.telegram {
+  padding-top: 30px;
+}
+.telegram__link {
+  color: #ffff;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 25px;
+  border: 10px solid transparent;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border: 10px solid #d3219e;
+  }
+}
