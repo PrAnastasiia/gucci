@@ -1,0 +1,38 @@
+.section__container {
+  & img {
+    width: 100%;
+  }
+}
+
+.banners__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.banners__item {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      flex-basis: calc(50% - 50px);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.banners__link {
+  border: 10px solid transparent;
+  border-radius: 10px;
+  transition: all 250ms linear;
+  &:hover,
+  &:focus {
+    border: 10px solid #d3219e;
+    background-color: #d3219e;
+  }
+}

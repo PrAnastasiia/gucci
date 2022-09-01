@@ -1,7 +1,8 @@
-body {
+.background {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-position: cover;
+  background-attachment: fixed;
 }
 
 img {
@@ -13,4 +14,18 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.section {
+  padding: 15px 0;
+}
+
+picture {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+}
+
+a {
+  display: block;
 }

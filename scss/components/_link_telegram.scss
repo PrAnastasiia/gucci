@@ -1,16 +1,15 @@
-.telegram {
-  padding-top: 30px;
-}
 .telegram__link {
-  color: #ffff;
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
-
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 24;
+  color: #000000;
+  text-shadow: 3px 0px 2px #ffffff, -3px 0px 2px #ffffff, -3px -3px 2px #ffffff, -3px 3px 2px #ffffff,
+    3px 3px 2px #ffffff, 3px -3px 2px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 10px;
 
   text-transform: uppercase;
   text-decoration: none;
@@ -19,8 +18,23 @@
   border: 10px solid transparent;
 
   transition: all 0.2s ease-in-out;
+  @media screen and (min-width: 768px) {
+    padding: 10px;
+  }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 10px solid #d3219e;
+  }
+}
+
+.telegram-icon {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    &--button {
+      display: none;
+    }
   }
 }
