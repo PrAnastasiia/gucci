@@ -2,17 +2,11 @@ body {
   margin: 0;
   height: 100%;
   overflow: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: black;
   color: #ccc;
   z-index: -2;
 }
 
-html::before,
-html::after,
 body::before,
 body::after {
   content: "";

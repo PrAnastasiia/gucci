@@ -2,14 +2,11 @@ body {
   margin: 0;
   height: 100%;
   overflow: auto;
-  flex-direction: column;
   background: black;
   color: #ccc;
   z-index: -2;
 }
 
-html::before,
-html::after,
 body::before,
 body::after {
   content: "";
